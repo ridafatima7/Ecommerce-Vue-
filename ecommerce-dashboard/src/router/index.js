@@ -6,10 +6,12 @@ import ProductRegistration from '../pages/ProductRegistration.vue';
 const routes = [
   { path: '/', component: RevenuePage },
   { path: '/inventory', component: InventoryPage },
-  { path: '/register', component: ProductRegistration },
+  { path: '/register', component: ProductRegistration }
 ];
 
-export default createRouter({
+const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes
 });
+
+export default router;
