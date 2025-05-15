@@ -27,7 +27,6 @@ const props = defineProps({
 });
 
 const { sales } = toRefs(props);
-
 const groupedSales = computed(() => {
   const totals = {};
   sales.value.forEach(({ date, amount }) => {
